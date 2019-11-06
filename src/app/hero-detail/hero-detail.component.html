@@ -1,0 +1,11 @@
+<!-- Mijn details van geselecteerde hero-->
+<div *ngIf="hero"> <!-- if ngIf has no value, it is removed from the DOM.-->
+    <h2>{{hero.name | uppercase}} Details</h2>
+    
+    <div><span>ID: </span>{{hero.id}}</div>
+    <div>
+      <Label>Name: 
+        <input [(ngModel)]="hero.name" placeholder="Name" />
+      </Label>
+    </div>
+  </div>
